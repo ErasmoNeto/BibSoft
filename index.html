@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8"/>
+    <title>Biblioteca Online</title>
+    <!--<link rel="stylesheet" type="text/css" href="estilo.css">-->
+</head>
+	<body style="margin:-0.036%;">
+    <table style="margin-top:-1%; margin-bottom:-1%;">
+    <tr id="tableHead">
+    <td height="20%" colspan="2">
+		<header>
+			<h1>Bem - vindo(a) a Biblioteca Online </h1>
+            <h2>Guarde informações de seus acervos de livros!</h2>
+		</header>
+    </td>
+    
+    </tr>
+    <tr>
+    <td>
+    <form action="cadastra.php" method="post">
+        <section>
+            <p><label for="iTitulo">Título do Livro:</label>
+            <input type="text" name="nTitulo" id="iTitulo" size="30" maxlength="80" placeholder="Título do livro" required/></p>
+            <p><label for="iAutor">Autor:</label>
+            <input type="text" name="nAutor" id="iAutor" step="1" placeholder="Nome do autor do livro" required/></p>
+            <p><label for="iEditora">Editora:</label>
+            <input type="text" name="nEditora" id="iEditora" step="1" placeholder="Nome da editora do livro" required/></p>
+            <p><label for="iNiver">Ano de Publicação:</label>
+            <input type="number" name="nAno" id="iAno" step="1" placeholder="Ano de publicação do livro" required/></p>
+            <input type="submit" value="Cadastrar" style="margin-left:35%; margin-bottom:1%;"/>
+        </section>
+        </form>
+        </td>
+        <td valign="top" width="50%">
+        <aside>
+        	<p>Seus livros:</p>
+            <iframe src="tabela.php" name="tabela" id="frame-livros" style="width:500px;height:350px;overflow:hidden;"></iframe>
+        </aside>
+        </td>
+     </tr>
+     <tr>
+     <td colspan="2" align="center" height="10%">
+        <footer>
+        	<p>Biblioteca Online - 2015</p>
+        </footer>
+    </td>
+    </tr>
+    </table>
+	</body>
+</html>
